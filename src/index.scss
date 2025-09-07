@@ -1,1 +1,29 @@
 
+$primary: #ff914d;   // Warm orange (friendly, energetic)
+$secondary: #6ec6ca; // Teal (trustworthy, calming)
+$accent: #ffd166; 
+
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/470/964/original/animal-track-seamless-pattern-vector.jpg);
+    background-size: cover;     
+  background-position: center; 
+  background-repeat: repeat; 
+  text-align: center;
+}
+h1{
+    background-color: $primary;
+    margin: auto;
+    border: #ffd166;
+    border-style: solid;
+    padding: 30px;
+}
+main{
+    margin: auto;
+    text-align:center;
+    background-color:$secondary
+}
+h2{
+    background-color: #ffd166;
+    border: #ff914d;
+    border-style: solid;
+}
