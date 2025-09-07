@@ -89,7 +89,7 @@ function App() {
           <input type="text" name="petName" required />
           <br />
           <label>Species</label>
-          <input type="text" name="species" optional />
+          <input type="text" name="species" required />
           <br />
           <label>Age</label>
           <input type="number" name="age" required />
