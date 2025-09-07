@@ -50,7 +50,7 @@ function App() {
     await updateItem(
       "Pet",
       { id: petToUpdate.id, name: petToUpdate.name },
-      petToUpdate
+      { species: petToUpdate.species }
     );
     setPets((prev) =>
       prev.map((p) => (p.id === petToUpdate.id ? petToUpdate : p))
@@ -82,9 +82,6 @@ function App() {
       <main>
         <form onSubmit={handleAddPet}>
           <h2>Pet Intake Form</h2>
-          <label>Photo</label>
-          <input type="file" accept="image/*" onChange={handleFileChange} />
-          <img src={preview} alt="pet preview" width={150} />
           <label>Name</label>
           <input type="text" name="petName" required />
           <br />
@@ -98,6 +95,9 @@ function App() {
             Adopted <input type="checkbox" name="isAdopted" />
           </label>
           <br />
+          <label>Photo</label>
+          <input type="file" accept="image/*" onChange={handleFileChange} />
+          <img src={preview} alt="pet preview" width={150} />
           <button type="submit">Add Pet</button>
         </form>
 
@@ -154,7 +154,13 @@ function App() {
                 <br />
                 <label>Species</label>
                 <br />
-                <input type="text" value={petToUpdate.species} />
+                <input
+                  type="text"
+                  value={petToUpdate.species}
+                  onChange={(e) =>
+                    setPetToUpdate({ ...petToUpdate, species: e.target.value })
+                  }
+                />
                 <label>
                   Adopted
                   <input

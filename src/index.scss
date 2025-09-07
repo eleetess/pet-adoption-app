@@ -1,6 +1,6 @@
 
-$primary: #af4706;   // Warm orange (friendly, energetic)
-$secondary: #086469; // Teal (trustworthy, calming)
+$primary: #af4706;   
+$secondary: #086469; 
 $accent: #aa7a0a; 
 
 body{
@@ -16,6 +16,8 @@ h1{
     border: #ffd166;
     border-style: solid;
     padding: 30px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 main{
     margin: auto;
@@ -26,7 +28,19 @@ h2{
     background-color: #ffd166;
     border: #ff914d;
     border-style: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 p{
     background-color: #3baf06;
+}
+form{
+    text-align: left;
+    margin: auto;
+    border-style: solid;
+    padding: 30px;
+    font-family:sans-serif;
+    font-weight: bold;
+
+    
+
 }
